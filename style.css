@@ -1,0 +1,98 @@
+
+body {
+    background-image: url(images/PAK75_kiiroihikari20141115175714_TP_V.webp);
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 65px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h3{
+    font-size: 27px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+    margin-bottom: 30px;
+    margin-left: 400px;
+}
+
+header {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+header nav ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+header nav ul li a {
+    color: #191970;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+main section {
+    border-bottom: 3px solid #000;
+}
+
+main ul {
+    list-style-type: decimal;
+    margin-left: 400px;
+}
+
+form {
+    width: 60%;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-left: 310px;
+    margin-bottom: 30px;
+}
+
+form fieldset {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 45%;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+th , td{
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #000;
+}
+
+footer {
+    text-align: center;
+    color: #191970;
+    padding: 10px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
