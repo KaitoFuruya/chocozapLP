@@ -56,11 +56,11 @@ nav a {
     padding: 10px;
 }
 
-.section {
+section {
     padding: 40px 0;
 }
 
-.section p {
+section p {
     text-align: center;
     font-size: 1.1rem;
 }
@@ -70,18 +70,25 @@ nav a {
 }
 
 .service-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    justify-items: center; 
 }
 
 .service-item {
-    width: 60%;
+    height: 150px;
+    width: 90%;
     background-color: #fff;
-    padding: 40px;
+    padding: 50px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:last-child {
+    width: 95%;
+    grid-column: span 2; 
+    text-align: center; 
 }
 
 .details-images {
@@ -107,7 +114,7 @@ nav a {
     background-color: #ffff99;
     padding: 20px;
     width: 80%;
-    max-width: 600px;
+    max-width: 750px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
