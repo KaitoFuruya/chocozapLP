@@ -1,89 +1,165 @@
 
 body {
     background-image: url(images/PAK75_kiiroihikari20141115175714_TP_V.webp);
+    background-repeat: repeat; 
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 h1 {
-    font-size: 5rem;
     text-align: center;
+    font-size: 3rem;
+    padding: 20px;
 }
 
 h2 {
-    font-size: 3rem;
     text-align: center;
-}
-
-h3{
     font-size: 2rem;
-    text-align: center;
+    padding: 20px;
 }
 
-p {
+h3 {
     text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
 }
 
-img {
-    width: 50%;
-    margin-bottom: 30px;
-    margin-left: 400px;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
 }
 
 header {
-    padding: 20px 0;
-    text-align: center;
-    border-bottom: 1px solid #000;
+    background-color: #ff6600;
+    padding: 40px 0;
 }
 
-header nav ul {
-    list-style-type: none; 
-    padding: 0;
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
 }
 
-header nav ul li a {
+nav a {
     color: #191970;
-    text-decoration: none;
-    font-size: 20px;
+    padding: 10px;
 }
 
-main section {
-    border-bottom: 3px solid #000;
+.section {
+    padding: 40px 0;
 }
 
-main ul {
-    list-style-type: decimal;
-    margin-left: 400px;
+.section p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.bg-light {
+    background-color: #fff;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.service-item {
+    width: 60%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.detail-image {
+    width: 45%;
+    border-radius: 8px;
+}
+
+.testimonials-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.testimonial-item {
+    background-color: #ffff99;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-name {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
 }
 
 form {
-    width: 60%;
-    background-color: #ffffff;
-    padding: 20px;
-    margin-left: 310px;
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-form fieldset {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 45%;
+form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 150px;
 }
 
 table {
     width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-th {
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
     text-align: left;
 }
 
-th , td{
-    padding: 10px;
-    font-size: 18px;
-    border-bottom: 1px solid #000;
+th {
+    background-color: #ffa500;
+    color: white;
+}
+
+td {
+    background-color: #ffffe0;
 }
 
 footer {
@@ -94,5 +170,6 @@ footer {
 }
 
 footer p {
+    font-size: 1rem;
     margin: 0;
 }

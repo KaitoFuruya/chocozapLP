@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>chocoZAP ランディングページ</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,61 +11,96 @@
 </head>
 <body>
     <header>
-        <h1>chocoZAP - 健康をサポートする新しいサービス</h1>
-        <nav>
-            <ul>
-                <li><a href="#overview">サービス概要</a></li>
-                <li><a href="#details">サービス詳細</a></li>
-                <li><a href="#testimonials">体験者の声</a></li>
-                <li><a href="#contact">問い合わせフォーム</a></li>
-                <li><a href="#company">会社概要</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>chocoZAP - 健康をサポートする新しいサービス</h1>
+            <nav>
+                <ul>
+                    <li><a href="#overview">サービス概要</a></li>
+                    <li><a href="#details">サービス詳細</a></li>
+                    <li><a href="#testimonials">体験者の声</a></li>
+                    <li><a href="#contact">問い合わせフォーム</a></li>
+                    <li><a href="#company">会社概要</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="overview">
-            <h2>サービス概要</h2>
-            <p>運動のための着替え荷物は不要!スマホ1台で通える!</p>
-            <p>ジムが初めてでも準備0で迷わずスタート!</p>
-            <p>着替え不要!</p>
-            <p>靴の履き替え不要!</p>
-            <p>契約時の来店不要!</p>
+        <section id="overview" class="section">
+            <div class="container">
+                <h2>サービス概要</h2>
+                <div class="service-list">
+                    <div class="service-item">
+                        <p>運動のための着替え荷物は不要!スマホ1台で通える!</p>
+                    </div>
+                    <div class="service-item">
+                        <p>ジムが初めてでも準備0で迷わずスタート!</p>
+                    </div>
+                    <div class="service-item">
+                        <p>着替え不要!</p>
+                    </div>
+                    <div class="service-item">
+                        <p>靴の履き替え不要!</p>
+                    </div>
+                    <div class="service-item">
+                        <p>契約時の来店不要!</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="details">
-            <h2>サービス詳細</h2>
-            <article>
+        <section id="details" class="section">
+            <div class="container">
+                <h2>サービス詳細</h2>
                 <h3>chocoZAPのプログラム</h3>
-                <p>chocoZAPはジムが初めての方におすすめ!</p>
-                <img src="images/habit_point_1.DZNbELqk.avif" alt="chocoZAPプログラム" /><br>
-                <img src="images/habit_point_2.CWgO4p8O.avif" alt="chocoZAPプログラム" /><br>
-                <img src="images/habit_point_3.CCk18gBc.avif" alt="chocoZAPプログラム" /><br>
-                <img src="images/service_gym.BmoDK-w7.avif" alt="chocoZAPプログラム" /><br>
+                <p>chocoZAPはジムが初めての方におすすめ!</p>               
+                <div class="details-images">
+                    <img src="images/habit_point_1.DZNbELqk.avif" alt="chocoZAPプログラム" class="detail-image"/><br>
+                    <img src="images/habit_point_2.CWgO4p8O.avif" alt="chocoZAPプログラム" class="detail-image"/><br>
+                    <img src="images/habit_point_3.CCk18gBc.avif" alt="chocoZAPプログラム" class="detail-image"/><br>
+                    <img src="images/service_gym.BmoDK-w7.avif" alt="chocoZAPプログラム" class="detail-image"/><br>
+                </div>
                 <p>どれも初心者でもすぐに使いこなせるトレーニングマシン。</p>
                 <p>まずは軽めの重さではじめてみよう!</p>
-                <img src="images/service_available_24.BWBSL8GB.avif" alt="chocoZAPプログラム" /><br>
-                <img src="images/service_beauty_care.CLMy6uim.avif" alt="chocoZAPプログラム" /><br>
-                <img src="images/service_esthetic.CrWZ6YUi.avif" alt="chocoZAPプログラム" /><br>
-                <img src="images/service_golf.BQVsOu_M.avif" alt="chocoZAPプログラム" /><br>
-                <img src="images/service_hair_removal.E15zdN9g.avif" alt="chocoZAPプログラム" /><br>
-                <img src="images/service_karaoke.CsFf8lPk.avif" alt="chocoZAPプログラム" /><br>
-                <img src="images/service_laundry.Lru6g8ll.avif" alt="chocoZAPプログラム" /><br>
-                <img src="images/service_massage_chair.GOPr94gk.avif" alt="chocoZAPプログラム" /><br>
-                <img src="images/service_nail.BrFyTXhq.avif" alt="chocoZAPプログラム" /><br>
-                <img src="images/service_pilates.BnVg7PW8.avif" alt="chocoZAPプログラム" /><br>
-                <img src="images/service_deskbike.CeqFju_z.avif" alt="chocoZAPプログラム" /><br>
-                <img src="images/service_adding_fee.CSLEzYkq.avif" alt="chocoZAPプログラム" />
-            </article>
+                </div>
+                <div class="details-images">
+                    <img src="images/service_available_24.BWBSL8GB.avif" alt="chocoZAPプログラム" class="detail-image"/><br>
+                    <img src="images/service_beauty_care.CLMy6uim.avif" alt="chocoZAPプログラム" class="detail-image"/><br>
+                    <img src="images/service_esthetic.CrWZ6YUi.avif" alt="chocoZAPプログラム" class="detail-image"/><br>
+                    <img src="images/service_golf.BQVsOu_M.avif" alt="chocoZAPプログラム" class="detail-image"/><br>
+                    <img src="images/service_hair_removal.E15zdN9g.avif" alt="chocoZAPプログラム" class="detail-image"/><br>
+                    <img src="images/service_karaoke.CsFf8lPk.avif" alt="chocoZAPプログラム" class="detail-image"/><br>
+                    <img src="images/service_laundry.Lru6g8ll.avif" alt="chocoZAPプログラム" class="detail-image"/><br>
+                    <img src="images/service_massage_chair.GOPr94gk.avif" alt="chocoZAPプログラム" class="detail-image"/><br>
+                    <img src="images/service_nail.BrFyTXhq.avif" alt="chocoZAPプログラム" class="detail-image"/><br>
+                    <img src="images/service_pilates.BnVg7PW8.avif" alt="chocoZAPプログラム" class="detail-image"/><br>
+                    <img src="images/service_deskbike.CeqFju_z.avif" alt="chocoZAPプログラム" class="detail-image"/><br>
+                    <img src="images/service_adding_fee.CSLEzYkq.avif" alt="chocoZAPプログラム" class="detail-image"/>
+                </div>
+            </div>
         </section>
 
-        <section id="testimonials">
-            <h2>体験者の声</h2>
-            <ul>
-                <li><strong>中島雄介さん:</strong> 「目標の-5kgを達成!周囲からも痩せて若返ったと言われて自信がつきました。」</li>
-                <li><strong>浜本一心さん:</strong> 「チョコザップはコスパ抜群です!痩せて綺麗になっていくのを感じました。」</li>
-                <li><strong>額賀力さん:</strong> 「トレーニングが日常に溶け込みやすく結果を維持できています。」</li>
-                <li><strong>本田凛羽さん:</strong> 「体力年齢はなんと-20歳上!約3000円で通えるジムはお得だと思います。」</li>
-            </ul>
+        <section id="testimonials" class="section bg-light">
+            <div class="container">
+                <h2>体験者の声</h2>
+                <div class="testimonials-list">
+                    <div class="testimonial-item">
+                        <span class="testimonial-name">中島雄介さん:</span>
+                        <p>「目標の-5kgを達成!周囲からも痩せて若返ったと言われて自信がつきました。」</p>
+                    </div>
+                    <div class="testimonial-item">
+                        <span class="testimonial-name">浜本一心さん:</span>
+                        <p>「チョコザップはコスパ抜群です!痩せて綺麗になっていくのを感じました。」</p>
+                    </div>
+                    <div class="testimonial-item">
+                        <span class="testimonial-name">額賀力さん:</span>
+                        <p>「トレーニングが日常に溶け込みやすく結果を維持できています。」</p>
+                    </div>
+                    <div class="testimonial-item">
+                        <span class="testimonial-name">本田凛羽さん:</span>
+                        <p>「体力年齢はなんと-20歳上!約3000円で通えるジムはお得だと思います。」</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
@@ -112,40 +148,42 @@
             </form>
         </section>
 
-        <section id="company">
-            <h2>会社概要</h2>
-            <table>
-                <tbody>
-                    <tr>
-                        <th>社名</th>
-                        <td>RIZAP株式会社</td>
-                    </tr>
-                    <tr>
-                        <th>所在地</th>
-                        <td>東京都新宿区西新宿8-17-1 住友不動産新宿グランドタワー36階</td>
-                    </tr>
-                    <tr>
-                        <th>設立日</th>
-                        <td>平成22年5月7日</td>
-                    </tr>
-                    <tr>
-                        <th>資本金</th>
-                        <td>1,000万円（2020年8月21日現在）</td>
-                    </tr>
-                    <tr>
-                        <th>役員</th>
-                        <td>代表取締役社長　瀬戸 健</td>
-                    </tr>
-                    <tr>
-                        <th>事業内容</th>
-                        <td>健康に関する研究、ボディメイク事業等</td>
-                    </tr>
-                    <tr>
-                        <th>決算期</th>
-                        <td>3月</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section id="company" class="section bg-light">
+            <div class="container">
+                <h2>会社概要</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>社名</th>
+                            <td>RIZAP株式会社</td>
+                        </tr>
+                        <tr>
+                            <th>所在地</th>
+                            <td>東京都新宿区西新宿8-17-1 住友不動産新宿グランドタワー36階</td>
+                        </tr>
+                        <tr>
+                            <th>設立日</th>
+                            <td>平成22年5月7日</td>
+                        </tr>
+                        <tr>
+                            <th>資本金</th>
+                            <td>1,000万円（2020年8月21日現在）</td>
+                        </tr>
+                        <tr>
+                            <th>役員</th>
+                            <td>代表取締役社長　瀬戸 健</td>
+                        </tr>
+                        <tr>
+                            <th>事業内容</th>
+                            <td>健康に関する研究、ボディメイク事業等</td>
+                        </tr>
+                        <tr>
+                            <th>決算期</th>
+                            <td>3月</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
 
