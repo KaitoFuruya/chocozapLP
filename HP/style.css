@@ -92,6 +92,10 @@ section img {
     margin: 0; 
 }
 
+.testimonial-item {
+    padding: 10px;
+}
+
 #contact {
     padding: 40px 10px;
 }
