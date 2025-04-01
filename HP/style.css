@@ -203,8 +203,11 @@ th,td {
         text-align: center;
     }
 
+    #overview {
+        padding: 100px;
+    }
+
     #testimonials {
-        background-color: #f4f4f9;
         padding: 40px 20px;
         text-align: center;
         border-radius: 8px;
