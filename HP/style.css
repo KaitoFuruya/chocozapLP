@@ -163,8 +163,8 @@ table {
 }
 
 th,td {
-    padding: 10px;
-    font-size: 16px;
+    padding: 5px;
+    font-size: 0.8rem;
     border-bottom: 1px solid #000;
 }
 
