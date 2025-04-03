@@ -2,7 +2,7 @@
 body {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
     background-color: #c1e4e9;
     color: #333;
@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-image: url('images/taku_25312061_TP_V.webp'); 
+    background-image: url('images/AIAI_25312_a049-SL_TP_V.webp'); 
     background-size: cover; 
     background-position: center; 
     padding: 150px 0; 
@@ -26,6 +26,34 @@ header .logo img {
 h1 {
     font-size: 2.5em;
     margin-top: 20px;
+}
+
+.navigation {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    text-align: center;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navigation ul li {
+    display: inline;
+}
+
+.navigation ul li a {
+    color: #fef263;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .container {
@@ -125,6 +153,22 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    .navigation {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        left: auto;
+        text-align: right;
+    }
+
+    .navigation ul {
+        justify-content: flex-end; /* メニューを右寄せ */
+    }
+
+    .navigation ul li {
+        display: inline;
+    }
+    
     .container {
         display: flex;
         gap: 30px; 
@@ -145,6 +189,9 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+    .navigation ul li a {
+        font-size: 0.8rem;
+    }
     .container {
         display: block; 
     }
