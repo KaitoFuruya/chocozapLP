@@ -1,28 +1,21 @@
-/* ress.min.css による基本リセット後のカスタムスタイル */
 
-/* 全体設定 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* フォント */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #c1e4e9;
     color: #333;
     line-height: 1.6;
 }
 
-/* ヘッダー */
 header {
-    background-image: url('images/taku_25312061_TP_V.webp'); /* ここで画像を指定 */
-    background-size: cover; /* 背景画像をヘッダー全体に広げる */
-    background-position: center; /* 画像の中央を表示 */
-    padding: 100px 0; /* 上下の余白を調整 */
+    background-image: url('images/taku_25312061_TP_V.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    padding: 150px 0; 
     text-align: center;
-    color: white; /* 文字色は白に設定 */
+    color: #fef263; 
 }
 
 header .logo img {
@@ -35,7 +28,6 @@ h1 {
     margin-top: 20px;
 }
 
-/* メインコンテナ */
 .container {
     display: block;
     margin-top: 30px;
@@ -45,10 +37,9 @@ h1 {
     padding: 20px;
 }
 
-/* サイドバー */
 .sidebar {
     padding: 20px;
-    background-color: white;
+    background-color: #e8d3d1;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -74,15 +65,13 @@ h1 {
     font-size: 1.1em;
 }
 
-/* メインコンテンツ */
 .main-content {
     padding: 20px;
-    background-color: white;
+    background-color: #fdeff2;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 体験者の声セクション */
 .testimonials {
     display: flex;
     flex-direction: column;
@@ -114,7 +103,6 @@ h1 {
     color: #666;
 }
 
-/* まとめセクション */
 .summary {
     margin-top: 40px;
     padding: 20px;
@@ -128,7 +116,6 @@ h1 {
     color: #444;
 }
 
-/* フッター */
 footer {
     background-color: #2C3E50;
     color: white;
@@ -137,32 +124,29 @@ footer {
     margin-top: 40px;
 }
 
-/* PC版（画面が768px以上のとき）で2カラムレイアウトに切り替え（サイドバー右） */
 @media screen and (min-width: 768px) {
     .container {
         display: flex;
-        gap: 30px; /* サイドバーとメインコンテンツの間隔 */
+        gap: 30px; 
     }
 
     .sidebar {
-        flex: 1; /* サイドバーを1:3の比率で配置 */
+        flex: 1; 
         margin-bottom: 0;
     }
 
     .main-content {
-        flex: 3; /* メインコンテンツは3倍の幅 */
+        flex: 3; 
     }
 
-    /* サイドバーを右に配置する */
     .container {
-        flex-direction: row-reverse; /* 左から右の並びを逆に */
+        flex-direction: row-reverse; 
     }
 }
 
-/* レスポンシブ対応（モバイル向け、デフォルトで1カラム） */
 @media screen and (max-width: 767px) {
     .container {
-        display: block; /* モバイルでは1カラム */
+        display: block; 
     }
 
     .testimonial {
