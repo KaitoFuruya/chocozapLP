@@ -19,8 +19,8 @@ header {
     background-size: cover; 
     background-position: center; 
     color: #fff;
-    padding: 150px 0; /* 縦幅を増加 */
-    position: relative; /* ナビゲーションメニューの位置を調整するために必要 */
+    padding: 150px 0; 
+    position: relative; 
 }
 
 header h1 {
@@ -29,16 +29,15 @@ header h1 {
     font-size: 3rem;
 }
 
-/* ナビゲーション */
 nav {
     position: absolute;
-    top: 20px; /* ヘッダーの上部から20px下げる */
-    right: 20px; /* ヘッダーの右端から20px内側に配置 */
+    top: 20px; 
+    right: 20px; 
 }
 
 nav ul {
     display: flex;
-    justify-content: flex-end; /* リストアイテムを右端に配置 */
+    justify-content: flex-end; 
     list-style: none;
     padding: 0;
     margin: 0;
@@ -52,7 +51,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1rem; /* 初期の文字サイズ */
+    font-size: 1rem; 
 }
 
 .gallery {
@@ -93,7 +92,7 @@ nav ul li a {
 }
 
 #company {
-    background-color: #f5f5f5; 
+    background-color: #f7f6f5; 
     padding: 40px 0;
     width: 100%; 
     margin: 0; 
@@ -111,7 +110,7 @@ th,td {
 }
 
 footer {
-    background-color: #333;
+    background-color: #001e43;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -134,18 +133,18 @@ footer {
     }
 
     nav {
-        position: relative; /* スマホ版では絶対位置を解除 */
+        position: relative; 
         top: 0;
         right: 0;
     }
 
     nav ul {
-        justify-content: center; /* 中央寄せに変更 */
+        justify-content: center; 
         width: 100%;
     }
 
     nav ul li a {
-        font-size: 0.7rem; /* モバイル版では文字サイズを小さく */
+        font-size: 0.7rem; 
     }
 
     .grid {
